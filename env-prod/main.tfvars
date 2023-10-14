@@ -40,5 +40,5 @@ components = {
       instance_type = "t3.small"
     }
   }
-security_groups = [ "sg-01eb9b07e2a904b4d" ]
+security_groups = [ "sg-0cb2694d9239346f4" ]
 zone_id = "Z05775253JDMGSEH85KOY"
