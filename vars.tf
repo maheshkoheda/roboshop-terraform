@@ -7,5 +7,5 @@ variable "tags" {}
 variable "env" {}
 variable "alb" {}
 variable "docdb" {}
-
+variable "rds" {}
 
