@@ -51,7 +51,13 @@ module "rds" {
   subnet_ids = local.db_subnets
   vpc_id = local.vpc_id
   sg_ingress_cidr = local.app_subnets_cidr
+  rds_type = each.value["rds_type"]
+  db_port = each.value["db_port"]
+  engine_family = each.value["engine_family"]
+  engine = each.value["engine"]
+  engine_version = each.value["engine_version"]
+  backup_retention_period = each.value["backup_retention_period"]
+  preferred_backup_window = each.value["preferred_backup_window"]
 
 }
-
 
